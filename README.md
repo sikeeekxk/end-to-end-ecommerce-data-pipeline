@@ -28,7 +28,7 @@ File | Rows | Description |
 | `sales.csv` | 1,737 | Purchase order line items and transaction details |
 
 ## ARCHITECTURE
-![Solution Architecture](diagrams/solution_architecture.svg)
+![Solution Architecture](diagram/solution_architecture.svg)
 
 ## TECHNOLOGIES USED
 - **Azure Data Lake Storage Gen2** – Stores raw (input) and processed (output) data.
@@ -41,14 +41,14 @@ File | Rows | Description |
 
 **Ingestion:** Raw CSV files from Kaggle (Customers, Products, Sales) are uploaded to the `input` directory in Azure Data Lake.
 **Orchestration:** An Azure Data Factory pipeline automatically copies the data from the `input` folder to the `output` folder.
-**Storage:** The copied dataset is stored in the `output` directory and used as the data source for Power BI..
+**Storage:** The copied dataset is stored in the `output` directory and used as the data source for Power BI.
 
-## Data Modeling & Transformation
+## DATA MODELING & TRANSFORMATION
 ![Data Model](img/data_model.png)
 
 The dataset was structured using a star schema for optimized querying. Data cleaning and relationship modeling were handled within Power Bi to ensure accurate calculation of KPI metrics.
 
-## 📊 Dashboard & Insights
+## DASHBOARD AND ANALYTICS
 ![Power BI Dashboard](img/dashboard.png)
 
 The Power BI dashboard provides key executive insights, including:
