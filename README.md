@@ -39,9 +39,9 @@ File | Rows | Description |
 ## DATA PIPELINES WORKFLOW
 ![Azure Data Factory Pipeline](img/adf_pipeline.png)
 
-**Ingestion:** Raw CSV files from Kaggle (Customers, Products, Sales) are uploaded to the `input` directory in Azure Data Lake.
-**Orchestration:** An Azure Data Factory pipeline automatically copies the data from the `input` folder to the `output` folder.
-**Storage:** The copied dataset is stored in the `output` directory and used as the data source for Power BI.
+* **Ingestion:** Raw CSV files from Kaggle (Customers, Products, Sales) are uploaded to the `input` directory in Azure Data Lake.
+* **Orchestration:** An Azure Data Factory pipeline automatically copies the data from the `input` folder to the `output` folder.
+* **Storage:** The copied dataset is stored in the `output` directory and used as the data source for Power BI.
 
 ## DATA MODELING & TRANSFORMATION
 ![Data Model](img/data_model.png)
