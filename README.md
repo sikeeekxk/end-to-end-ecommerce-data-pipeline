@@ -28,7 +28,7 @@ File | Rows | Description |
 | `sales.csv` | 1,737 | Purchase order line items and transaction details |
 
 ## ARCHITECTURE
-![Solution Architecture](diagram/solution_architecture.svg)
+![Solution Architecture](diagram/solution_architecture.png)
 
 ## TECHNOLOGIES USED
 - **Azure Data Lake Storage Gen2** – Stores raw (input) and processed (output) data.
